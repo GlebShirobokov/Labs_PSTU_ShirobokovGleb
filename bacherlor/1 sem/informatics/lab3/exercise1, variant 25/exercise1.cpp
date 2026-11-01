@@ -29,4 +29,5 @@ int main() {
         }
         cout << "X = " << x << " SN = " << sn <<" SE = " << se << " Y = " << y << endl; //вывод данных
 }
+    return 0;
 }
