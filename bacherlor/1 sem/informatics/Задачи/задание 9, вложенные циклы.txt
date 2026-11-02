@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+	setlocale(LC_ALL, "ru");
+	int n, s{ 0 };
+	cin >> n;
+	for (int i = 1; i <= n; ++i) {
+		int a = i;
+		int k = i+1;
+		for (int j = 1; j <= i; ++j) {
+			a *= k;
+			++k;
+		}
+		s += a;
+	}
+	cout << "сумма " << n << " произведений равна " << s;
+}
+return 0;
+}
