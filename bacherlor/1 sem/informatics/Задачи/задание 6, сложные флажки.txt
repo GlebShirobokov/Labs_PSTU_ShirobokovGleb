@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	setlocale(LC_ALL, "RU");
+	int a, b;
+	bool f = true;
+	cin >> a;
+	if (a != 0) {
+		cin >> b;
+		f = (a < b);
+		while ((b != 0) && (a != b) && f) {
+			f = (a < b) && f;
+			if (f) {
+				a = b;
+				cin >> b;
+			}
+
+		}
+		if (f) cout << "последовательность отсортирована по возростанию";
+		else cout << "последовательность не отсортирована по возростанию";
+	}
+	else cout << "нулевая последовательность";
+return 0;
+}
